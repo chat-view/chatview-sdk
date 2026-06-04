@@ -1,0 +1,55 @@
+{
+  "name": "@chatview/sdk",
+  "version": "0.1.0",
+  "description": "SDK and API client for the ChatView API. Share ChatGPT, Claude, and AI conversations as secure public links.",
+  "keywords": [
+    "chatview",
+    "chatview-api",
+    "chatview-sdk",
+    "ai-conversation-sharing",
+    "chatgpt-sharing",
+    "claude-sharing",
+    "browser-extension-api",
+    "ai-chat-export",
+    "api-client",
+    "sdk",
+    "typescript"
+  ],
+  "homepage": "https://chat-view.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chat-view/chatview-sdk.git",
+    "directory": "packages/typescript"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

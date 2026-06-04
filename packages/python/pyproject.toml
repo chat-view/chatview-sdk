@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chatview"
+version = "0.1.0"
+description = "Python SDK for the ChatView API. Share ChatGPT, Claude, and AI conversations as secure public links."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["httpx>=0.27.0"]
+keywords = [
+  "chatview",
+  "chatview-api",
+  "ai-conversation-sharing",
+  "chatgpt",
+  "claude",
+  "browser-extension",
+  "api-client",
+  "python-sdk",
+]
+authors = [{ name = "ChatView" }]
+homepage = "https://chat-view.com"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-httpx>=0.35"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chatview"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
