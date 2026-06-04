@@ -15,7 +15,6 @@ ChatView SDK provides developer-friendly API clients and examples for the ChatVi
 - **AI conversation sharing API** with a small, testable client (`createContent`, `uploadAttachment`, `createContentWithAttachments`)
 - **ChatGPT conversation sharing API** and Claude flows use the same client methods
 - Typed errors (`ChatViewApiError`) for production extensions and backends
-- SEO-friendly [docs](./docs/) and [examples](./examples/) for common integration paths
 
 Learn more at [https://chat-view.com](https://chat-view.com).
 

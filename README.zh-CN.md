@@ -2,7 +2,7 @@
 
 [English](./README.md)
 
-**ChatView SDK** 为 [ChatView API](https://chat-view.com/docs/api) 提供 TypeScript 与 Python 客户端及可运行示例，帮助开发者通过 API **分享 AI 对话**、ChatGPT/Claude 回复、**浏览器扩展**采集内容，并生成带密码的**安全公开链接**。本仓库是 [ChatView](https://chat-view.com) 的开发者 SEO 入口，涵盖 AI conversation sharing、ChatGPT 分享、对话 HTML 上传等集成场景。
+**ChatView SDK** 为 [ChatView API](https://chat-view.com/docs/api) 提供 TypeScript 与 Python 客户端及可运行示例，帮助开发者通过 API **分享 AI 对话**、ChatGPT/Claude 回复、**浏览器扩展**采集内容，并生成带密码的**安全公开链接**。
 
 ---
 

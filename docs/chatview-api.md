@@ -65,7 +65,7 @@ print(client.create_content(raw_html="<p>AI reply</p>", source_platform="ChatGPT
 Important JSON fields for `POST /api/contents`:
 
 - `raw_html` (required) — sanitized server-side; max length applies per token type
-- `plain_text` — recommended for summaries and SEO description on the share page
+- `plain_text` — recommended for summaries and description on the share page
 - `source_platform`, `source_url`, `model_name` — provenance for ChatGPT / Claude / Gemini
 - `password`, `password_protected`, `expiration` — control access and lifetime
 - `metadata` — arbitrary JSON; include `attachments: [id]` after uploads

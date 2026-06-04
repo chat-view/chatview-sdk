@@ -44,7 +44,7 @@ Upload files first, then pass IDs in `metadata.attachments` when creating conten
 
 ## Security defaults
 
-New shares default to password protection and 30-day expiration unless you override `password_protected` or `expiration`. Share pages use `noindex` so they are not meant for public SEO indexing—your API integration should treat links as capability URLs.
+New shares default to password protection and 30-day expiration unless you override `password_protected` or `expiration`. Share pages use `noindex` so they are not meant for public indexing—your API integration should treat links as capability URLs.
 
 ## Related resources
 
